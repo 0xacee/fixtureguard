@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/0xacee/fixtureguard/main/schemas/config.schema.json",
+  "version": 1,
+  "include": [
+    "examples/**"
+  ],
+  "exclude": [],
+  "disabledRules": [],
+  "maxFileBytes": 1048576,
+  "baseline": ".fixtureguard-baseline.json"
+}

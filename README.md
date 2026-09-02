@@ -1,5 +1,8 @@
 # FixtureGuard
 
+[![CI](https://github.com/0xacee/fixtureguard/actions/workflows/ci.yml/badge.svg)](https://github.com/0xacee/fixtureguard/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-e11d48.svg)](LICENSE)
+
 **Keep snapshots portable without printing the data that made them unsafe.**
 
 FixtureGuard finds host-specific paths, process IDs, and local-network
