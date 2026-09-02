@@ -1,0 +1,21 @@
+name: Detection bug
+description: Report a false positive, false negative, or disclosure
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: Synthetic fixture
+      description: Never paste real usernames, paths, addresses, or credentials.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: FixtureGuard, Node.js, and OS versions
+    validations:
+      required: true

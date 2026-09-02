@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/0xacee/fixtureguard/main/schemas/config.schema.json",
+  "title": "FixtureGuard configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "const": 1 },
+    "include": { "$ref": "#/$defs/strings" },
+    "exclude": { "$ref": "#/$defs/strings" },
+    "disabledRules": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["HOST001", "HOST002", "HOST003", "HOST004", "HOST005", "NONDET001", "NET001", "NET002"] }
+    },
+    "maxFileBytes": { "type": "integer", "minimum": 1024, "maximum": 16777216 },
+    "baseline": { "type": "string", "minLength": 1 }
+  },
+  "$defs": {
+    "strings": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    }
+  }
+}

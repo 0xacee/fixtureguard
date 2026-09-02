@@ -1,0 +1,23 @@
+{
+  "name": "fixtureguard",
+  "version": "0.1.0",
+  "description": "Catch host-specific paths and addresses in committed test fixtures.",
+  "type": "module",
+  "bin": {
+    "fixtureguard": "./bin/fixtureguard.js"
+  },
+  "exports": "./src/index.js",
+  "files": ["bin", "src", "schemas", "README.md", "LICENSE"],
+  "scripts": {
+    "check": "node --test && node bin/fixtureguard.js --help",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" },
+  "keywords": ["testing", "fixtures", "snapshots", "hermetic", "linter", "sarif"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xacee/fixtureguard.git"
+  },
+  "bugs": { "url": "https://github.com/0xacee/fixtureguard/issues" }
+}

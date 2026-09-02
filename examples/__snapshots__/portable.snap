@@ -1,0 +1,4 @@
+workspace=<WORKSPACE>
+temporary_directory=<TEMP_DIR>
+service_address=<PRIVATE_IP>
+process_file=<PROCESS_FILE>
